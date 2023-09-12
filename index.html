@@ -3,25 +3,71 @@
     <body>
         <a href="http://www.kubsu.ru/">1.Сайт КубГУ</a><br>
         <a href="https://www.kubsu.ru/">2.Сайт КубГУ HTTPS</a><br>
-        <img src="sourcs/image.jpg" id="anchor" style="width: 600px;"></a><br>
+        <img src="sources/image.jpg" name="anchor" height="200" width = "200"></a><br>
         <a href="a.html">4.Ссылка на внутреннюю страницу</a><br>
         <a href="index.html">5.Ссылка на главную страницу</a><br>
         <a href="#anchor">6.Ссылка на элемент текущей страницы</a><br>
         <a href="https://market.yandex.ru/?clid=505&src_pof=505&utm_source=main_stripe_big&utm_source_service=morda" target="_blank">7.Ссылка с тремя параметрами</a><br>
-        <a href="https://yandex.ru/" id="yndx">8.Ссылка с id</a><br>
-        <a href="a.html">9.Относительная ссылка на страницу в текущем каталоге</a><br>
-        <a href="../about/about.html">10.Относительная ссылка на страницу в каталоге about</a><br>
-        <a href="../file11.html">11.Относительная ссылка на директорию выше</a><br>
-        <a href="../../file12.html">12.Относительная ссылка на две директории выше</a><br>
-        <br>
-        <br>
-        <br>
+        <a href="https://yandex.ru?id=1">8.Ссылка с id</a><br>
+        <a href="./a.html">9.Относительная ссылка на страницу в текущем каталоге</a><br>
+        <a href="./about/about.html">10.Относительная ссылка на страницу в каталоге about</a><br>
+        <a href="./nothing/nothing.html">11.Относительная ссылка на директорию выше</a><br>
+        <a href="./nothing/nothing1/nothing.html">12.Относительная ссылка на две директории выше</a><br>
+        13.контекстная <a href="http://www.kubsu.ru/">ссылка</a> в тексте<br>
+        <a href="https://ru.wikipedia.org/wiki/Автомобиль#Автомобильная промышленность">14.Ссылка на элемент сторонней страницы</a><br>
+        <img src="sources/image.jpg" usemap="#image" width="400" height="200">
+        <map name="image">
+            <area shape="rect" coords="0,0,200,200" href="https://vk.com/feed" >
+            <area shape="circle" coords="300,100,100" href="http://ya.ru" >
+        </map><br>
         <a href="">16. Пустая ссылка</a><br>
         <a>17.Ссылка без href</a><br>
-        <a href="../../file12.html">18.Ссылка на страницу, по которой нельзя перейти с поисковика</a>
-        <br>
-        <br>
-        <br>
+        <a href="http://www.kubsu.ru/" rel="notfollow">18.Ссылка на страницу, по которой нельзя перейти с поисковика</a><br>
+        <a href="http://www.kubsu.ru/" rel="noindex">19.Ссылка на страницу, которую нельзя индексировать</a><br>
+        <ol>
+            <li>title</li>
+            <li>title</li>
+            <li>title</li>
+        </ol>
+        <a href="ftp://anysite.com/file.zip">21.Ссылка на файл FTP без авторизации</a><br>
+
+
+        <form action="/ " method="post">
+            <label for="fullname">ФИО:</label><br>
+            <input type="text" id="fullname"><br>
+
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br>
+
+            <label for="birthday">День рождения:</label><br>
+            <input type="date" id="birthday"><br>
+
+            <label>Пол:</label><br>
+            <input type="radio" name="sex">Муж.<br>
+            <input type="radio" name="sex">Жен.<br>
+
+            <select name="language">
+                <option value="c++">C++</option>
+                <option value="rust">Rust</option>
+                <option value="haskell">Haskell</option>
+                <option value="python">Python</option>
+                <option value="elixir">Elixir</option>
+                <option value="scala">Scala</option>
+            </select><br>
+
+            <label for="biography">Биография:</label><br>
+            <textarea name="biography" cols="20" rows="20" id="biography"></textarea><br>
+
+            <label for="agreement">
+                с контрактом ознакомлен(а)
+            </label><br>
+            <input type="checkbox" name="agreement" id="agreement"><br>
+
+            <button type="submit">Сохранить</button>
+        </form>
         
     </body>
 </html>
