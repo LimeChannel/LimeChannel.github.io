@@ -55,6 +55,7 @@ text-align: center;
     padding: 10px;
     background-color: #3d3848;
     max-width: 960px;
+    border-radius: 20px;
 }
 
 #footer{
