@@ -61,6 +61,7 @@ text-align: center;
 }
 
 #table_1{
+    border: 2px;
     margin: auto;
     width: 600px;
 }
