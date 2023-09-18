@@ -50,12 +50,19 @@ text-align: center;
 
 
 #refs, #form, #table {
-    left: 50%;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     background-color: #3d3848;
     max-width: 960px;
     border-radius: 20px;
+
+}
+
+#table_1{
+    margin: auto;
+    width: 600px;
 }
 
 #footer{
@@ -69,4 +76,12 @@ text-align: center;
     text-align: center;
     padding-right: 10%;
     line-height: 120px;
+}
+
+.even {
+    background-color: #26222d;
+}
+
+.odd {
+    background-color: #3d3848;
 }
