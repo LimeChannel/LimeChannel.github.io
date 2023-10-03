@@ -1,0 +1,18 @@
+#main {
+    background-color: #26222d;
+}
+
+#refs, #form, #table, .navbar, .footer {
+    text-align: center;
+    background-color: #3d3848;
+}
+
+.navbar{
+    height: 120px;
+}
+
+@media screen and (min-width: 960px) {
+    #refs, #form, #table {
+        border-radius: 20px;
+    }
+}

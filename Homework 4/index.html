@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Д/З 4</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-header navbar-left">
+                    <img src="./sources/lime_small.png" class="navbar-brand">
+                    <a href="#" class="text-white">Сайт Лайма (Лобов В.А.)</a> 
+                </div>
+                <div class="navbar-header navbar-right">
+                    <a href="#refs" class="text-white">Ссылки</a>
+                    <a href="#form" class="text-white">Форма</a>
+                    <a href="#table" class="text-white">Таблица</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid  p-0 py-4" id="main">
+            <div class="container col-12 col-lg-8 p-2" id="refs">
+                <a href="http://www.kubsu.ru/" class="text-white">1.Сайт КубГУ</a><br>
+                <a href="https://www.kubsu.ru/" class="text-white">2.Сайт КубГУ HTTPS</a><br>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="sources/image.gif" id="anchor" height="200" width = "200" alt="image error"></a><br>
+                <a href="a.html" class="text-white">4.Ссылка на внутреннюю страницу</a><br>
+                <a href="index.html" class="text-white">5.Ссылка на главную страницу</a><br>
+                <a href="#anchor" class="text-white">6.Ссылка на элемент текущей страницы</a><br>
+                <a href="https://market.yandex.ru/?clid=505&src_pof=505&utm_source=main_stripe_big&utm_source_service=morda" target="_blank" class="text-white">7.Ссылка с тремя параметрами</a><br>
+                <a href="https://yandex.ru?id=1" class="text-white">8.Ссылка с id</a><br>
+                <a href="./a.html" class="text-white">9.Относительная ссылка на страницу в текущем каталоге</a><br>
+                <a href="./about/about.html" class="text-white">10.Относительная ссылка на страницу в каталоге about</a><br>
+                <a href="./nothing/nothing.html" class="text-white">11.Относительная ссылка на директорию выше</a><br>
+                <a href="./nothing/nothing1/nothing.html" class="text-white">12.Относительная ссылка на две директории выше</a><br>
+                <p class="text-white">13.Контекстная <a href="http://www.kubsu.ru/" class="text-white">ссылка</a> в тексте<br>
+                <a href="https://ru.wikipedia.org/wiki/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82#:~:text=%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-,%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B0%D0%B2%D0%B0%D0%BD%D0%B3%D0%B0%D1%80%D0%B4%3A%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%B2%20%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%BC,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C" class="text-white">14.Ссылка на элемент сторонней страницы</a><br>
+                <img src="sources/image.gif" usemap="#image" width="400" height="200" alt="image error">
+                <map name="image">
+                    <area shape="rect" coords="0,0,200,200" href="https://ru.wikipedia.org/wiki/Чёрный_квадрат" alt="area error">
+                    <area shape="circle" coords="300,100,100" href="https://ru.wikipedia.org/wiki/Круг,_Михаил_Владимирович" alt="area error">
+                </map><br>
+                <a href="" class="text-white">16. Пустая ссылка</a><br>
+                <a class="text-white">17.Ссылка без href</a><br>
+                <a href="http://www.kubsu.ru/" rel="notfollow" class="text-white">18.Ссылка на страницу, по которой нельзя перейти с поисковика</a><br>
+                <a href="http://www.kubsu.ru/" rel="noindex" class="text-white">19.Ссылка на страницу, которую нельзя индексировать</a><br>
+                <ol class="text-white">
+                    <li class="li">Первая строка списка</li>
+                    <li class="li">Вторая строка списка</li>
+                    <li class="li">Третья строка списка</li>
+                </ol>
+                <a href="ftp://anysite.com/file.zip" class="text-white">21.Ссылка на файл FTP без авторизации</a><br>
+            </div>
+            <div class="container col-12 col-lg-8 mt-4 p-2 text-white" id="form">
+                <form action="/ " method="post">
+                    <label for="fullname">ФИО:</label><br>
+                    <input type="text" id="fullname" class="bg-white"><br>
+    
+                    <label for="phone">Телефон:</label><br>
+                    <input type="tel" id="phone" class="bg-white"><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" class="bg-white"><br>
+    
+                    <label for="birthday">День рождения:</label><br>
+                    <input type="date" id="birthday" class="bg-white"><br>
+    
+                    <label>Пол:</label><br>
+                    <input type="radio" name="sex">Муж.
+                    <input type="radio" name="sex">Жен.<br>
+    
+                    <select name="language" class="bg-white">
+                        <option value="c++">C++</option>
+                        <option value="rust">Rust</option>
+                        <option value="haskell">Haskell</option>
+                        <option value="python">Python</option>
+                        <option value="elixir">Elixir</option>
+                        <option value="scala">Scala</option>
+                    </select><br>
+    
+                    <label for="biography">Биография:</label><br>
+                    <textarea name="biography" cols="40" rows="10" id="biography" class="bg-white"></textarea><br>
+    
+                    <label for="agreement">
+                        с контрактом ознакомлен(а)
+                    </label><br>
+                    <input type="checkbox" name="agreement" id="agreement"><br>
+    
+                    <button type="submit"class="text-white">Сохранить</button>
+                </form>
+            </div>
+            <div class="container col-12 col-lg-8 mt-4 p-2 text-white" id="table">
+                <div class="container col-8">
+                    <table class="table table-light table-striped table-bordered table-condensed">
+                        <thead class="">
+                            <tr>
+                                <th>1 столбец</th> <th>2 столбец</th> <th>3 столбец</th>
+                            </tr> 
+                        </thead>
+                        <tbody>
+                            <tr class="even">
+                            <td>1 строка</td><td>1 строка</td><td>1 строка</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>2 строка</td><td>2 строка</td><td>2 строка</td>
+                            </tr>
+                            <tr class="even">
+                                <td colspan="3">3 строка</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-right">
+                    <a href="#" class="text-white">Лобов В.А.</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
