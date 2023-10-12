@@ -2,27 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="calculator">
-
+    <div class="container col-4 my-auto p-2 text-center" id="main">
       <form onsubmit="return calculate(self)">
         <label for="amount">Единиц:</label>
-        <input name="count" id="count" type="text">
+        <input name="count" id="count" type="text"><br>
 
         <label for="choice">Выберите товар:</label>
         <select id="type">
             <option value="0">Ручка</option>
             <option value="1">Тетрадь</option>
             <option value="2">Книга</option>
-        </select>
-        <input type="submit" id="submit" name="submit" value="Рассчитать">
+        </select><br>
+        <input type="submit" id="submit" name="submit" value="Рассчитать"><br>
       </form>
-      
-      <div id="result">Итог: </div>
-
+      <div id="result">Итог</div>
     </div>
-
     <script src="main.js"></script>
   </body>
 </html>
