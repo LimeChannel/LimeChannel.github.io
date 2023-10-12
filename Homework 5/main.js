@@ -9,6 +9,7 @@ function calculate(form)
     var amount = form.count.value
     var type = form.type.value
     console.log(prices[type] * amount)
+    document.getElementById('result').innerText='Итог: ' + prices[type] * amount
 
     return false
 }
