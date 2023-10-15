@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Задание 6</title>
   </head>
   <body>
     <div class="container">
       <div class="container col-4 my-auto p-2 text-center" id="main">
-        <form onsubmit="return calculate(self)">
+        <form onsubmit="return calculate(self)" id="first_form">
           <label for="amount">Единиц:</label>
-          <input name="count" id="count" type="text"><br>
+          <input id="amount" type="text"><br>
 
-          <label for="choice">Выберите товар:</label>
+          <label for="type">Выберите товар:</label>
           <select id="type">
               <option value="0">Ручка</option>
               <option value="1">Тетрадь</option>
@@ -27,7 +28,7 @@
 
       <div class="container col-4 p-2 mt-5 text-center" id="Second_form">
         <h5>Характеристики:</h5>
-        <form>
+        <form id="second_form">
 
           <select id="prodType">
             <option value="0">Product 1</option>
@@ -35,7 +36,7 @@
             <option value="2">Product 3</option>
           </select><br>
 
-          <label for="amount">Единиц:</label>
+          <label name="amount">Единиц:</label>
           <input name="count2" id="count2" type="text"><br>
 
           <div id="radios">
