@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container col-4 my-auto p-2 text-center" id="main">
+        <form onsubmit="return calculate(self)">
+          <label for="amount">Единиц:</label>
+          <input name="count" id="count" type="text"><br>
+
+          <label for="choice">Выберите товар:</label>
+          <select id="type">
+              <option value="0">Ручка</option>
+              <option value="1">Тетрадь</option>
+              <option value="2">Книга</option>
+          </select><br>
+          <input type="submit" id="submit" name="submit" value="Рассчитать"><br>
+        </form>
+        <div id="result">Итог</div>
+      </div>
+
+
+
+      <div class="container col-4 p-2 mt-5 text-center" id="Second_form">
+        <h5>Характеристики:</h5>
+        <form>
+
+          <select id="prodType">
+            <option value="0">Product 1</option>
+            <option value="1">Product 2</option>
+            <option value="2">Product 3</option>
+          </select><br>
+
+          <label for="amount">Единиц:</label>
+          <input name="count2" id="count2" type="text"><br>
+
+          <div id="radios">
+            <label><input type="radio" name="prodOptions" value="0"> Опция 1</label>
+            <label><input type="radio" name="prodOptions" value="1"> Опция 2</label>
+            <label><input type="radio" name="prodOptions" value="2"> Опция 3</label>
+          </div>
+
+          <div id="checkboxes">
+            <label><input type="checkbox" name="checkbox" value="0"> Свойство 1</label>
+            <label><input type="checkbox" name="checkbox" value="1"> Свойство 2</label>
+          </div>
+
+        </form>
+        <h5 id="price">Цена: 100</h5>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
